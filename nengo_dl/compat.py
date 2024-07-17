@@ -78,7 +78,7 @@ if version.parse(tf.__version__) < version.parse("2.6.0rc0"):  # pragma: no cove
         BatchNormalizationV2,
     )
 elif version.parse(tf.__version__) >= version.parse("2.9.0"):
-    from tensorflow.python.keras.engine import Functional, _build_map
+    from tensorflow.python.keras.engine.functional import Functional, _build_map
     from tensorflow.python.keras.layers import (
         BatchNormalizationV1,
         BatchNormalizationV2,
